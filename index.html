@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя WEB-страница</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Добро пожаловать на мою страницу</h1>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="1.html">О себе</a></li>
+      <li><a href="mesta.html">Любимые места</a></li>
+      <li><a href="knigi.html">Книги</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>О себе</h2>
+      <img src="pic/2" alt="Моё фото" class="float-left">
+      <p>Привет! Меня зовут Лера. Я учусь на веб-разработчика</p>
+    </section>
+
+    <section id="hobby">
+      <br>
+      <h2>Мои хобби</h2>
+      <ul>
+        <il> ♥ смотреть стримы егора крида </il><br> 
+        <il> ♥ репостить все видео с егором кридом </il><br>
+        <il> ♥ угарать всe пары с мишаней и квадробершей </il><br>
+        <il> ♥ жить в кайф </il><br> 
+        <il> ♥ всех бесить и буллить </il><br> 
+      </ul>
+    </br>
+    </section>
+    <section id="friends">
+      <h2>Мои друзья</h2>
+      <ul>
+        <li><a href="http://t.me/magnoliagod"> Миша </a><br></li>
+        <li><a href="https://t.me/likallk"> Лика </a><br></li>
+      </ul>
+    </section>
+
+  
+    <section id="news">
+      <h2>Лента новостей</h2>
+      <table>
+        <tr><th>Дата</th><th>Событие</th></tr>
+        <tr><td>01.09.2023</td><td>Поступила в колледж на веб-разработчика</td></tr>
+      </table>
+
+      <div class="interact">
+        <button onclick="like()">Лайк</button>
+        <span id="likes">0</span> лайков
+        <br>
+        <textarea placeholder="Оставьте комментарий"></textarea>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Контакты</h2>
+      <form>
+        <label>Имя: <input type="text" name="name"></label><br>
+        <label>Сообщение: <textarea name="message"></textarea></label><br>
+        <input type="submit" value="Отправить">
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
